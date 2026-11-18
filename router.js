@@ -3,10 +3,10 @@ var router = express.Router();
 let logout=false
 let wrongcred=false
 
-const credential ={
-    email : "admin@gmail.com",
-    password : "admin123"
-}
+const credential = {
+    email: process.env.DEMO_LOGIN_EMAIL,
+    password: process.env.DEMO_LOGIN_PASSWORD
+};
 
 //home route
 router.get('/',(req,res)=>{
